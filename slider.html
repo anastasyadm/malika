@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="css/smslider.css" />
+</head>
+
+<body class="page-main page-main-index">
+
+    <div class="w1000">
+        <div class="interior-page txt-center clear">
+            <div id="sm_slider">
+                <ul>
+                    <li><img width="980" height="382" src="images/2.jpg"></li>
+                    <li><img width="980" height="382" src="images/3.jpg"></li>
+                    <li><img width="980" height="382" src="images/4.jpg"></li>
+                </ul>
+            </div>
+
+        </div><!-- interior-page -->
+    </div>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery.smslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sm_slider').smSlider({
+                transition: 'fader',
+                autoPlay: true,
+                hoverPause: false,
+                duration: 800
+            });
+        });</script>
+</body>
+
+</html>
