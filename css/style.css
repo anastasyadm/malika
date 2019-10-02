@@ -16,7 +16,6 @@ body{
 	width: 1925px;
 	margin: 0;
 	padding: 0;
-    height: 2562px;
 	
 }
 
@@ -216,7 +215,8 @@ footer nav li {
 	display: inline-block;
 	width: 980px;
 }
-.menu, .menu2 .active{
+
+.active{
 	border-bottom: 1px solid #cc9933;
     padding-bottom: 9px;
 }
@@ -278,7 +278,7 @@ footer nav li {
 .price{
 	height: 64px;
 		padding-left: 42px;
-	margin-top: 35px;
+	margin-top: 8px;
 }
 .price a{
 	color: #515151;
