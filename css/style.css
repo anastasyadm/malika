@@ -32,9 +32,13 @@ a{
 .container-contact{
 	width: 1925px;
 	margin: 0;
-	padding-left: 82px;
+	padding-left: 80px;
     padding-right: 100px;
     height: 784;
+    background-color: #fbfbfb;
+}
+.page-main-contact{
+    width: 1920px;
 }
 header .logo{
 	float: left;
@@ -50,6 +54,19 @@ header .logo img{
 	padding-top: 14px;
 	height: 24px;
 
+}
+header .logo2 img{
+    padding-top: 4px;
+    height: 20px;
+}
+header .logo2{
+        float: left;
+    margin-left: 77px;
+}
+.footer-block3 img{
+    margin-right: 384px;
+        width: 135px;
+    margin-top: 22px;
 }
 header nav li a{
 	text-decoration: none; /* Убираем подчеркивание у ссылок */
@@ -101,6 +118,16 @@ header nav li a{
     float: left;
     text-align: left;
     font-size: 15px;
+    margin-right: 15px;
+        padding-top: 38px;
+}
+.info-contact p{
+        margin-top: -10px;
+    font-size: 13px;
+}
+.contact-email{
+    padding-top: 6px;
+        margin-bottom: 26px;
 }
 .info-girl{
     width: 400px;
@@ -131,17 +158,36 @@ header nav li a{
     display: inline-block;
 }
 .bottom{
-    margin-bottom: 160px;
+    padding-top: 6px;
+    margin-bottom: 118px;
+}
+.requisites p{
+    font-size: 11px;
+    padding-bottom: 7px;
 }
 .map{
-    width: 1285px;
+    width: 1030px;
     height: 784px;
     float: left;
 }
 h2, h3{
    color: #bd985c;
 }
-
+h4{
+    color: #bd985c;
+    margin-top: 53;
+    font-size: 12px;
+}
+.menu3{
+        margin-left: 358px;
+}
+.menu3 li{
+    padding-top: 4px;
+    list-style-type: none;
+    float: left;
+    padding-right: 26px;
+    font-size: 14px;
+}
 header nav ul
 
 {
@@ -359,7 +405,11 @@ textarea{
     background:#242424;
     clear: both;
     height: 255px;
-    
+}
+.footer3{
+    background:#242424;
+    clear: both;
+    height: 210px;
 }
 .top-nav-wrap{
     clear: both;
@@ -373,18 +423,32 @@ footer nav li{
     list-style-type: none; /* Убираем маркеры */
     
 }
-.logo-footer{
-    width: 162px;
-        margin-top: 30px;
-    margin-bottom: 23px;
-}
+
 .footer_social{
     color: white;
     margin-bottom: 11px;
 }
+
 .footer_social>p{
         display: block;
     float: left;
+}
+.footer_social3{
+    color: white;
+    margin-bottom: 11px;
+    margin-top: -3px;
+}
+
+.footer_social3>p{
+        display: block;
+    float: left;
+}
+.social_btn3>img{
+    width: 24px;
+}
+.social_btn_wa3{
+    width: 35px;
+   margin-right: -358px;
 }
 .social_btn>img{
         width: 30px;
@@ -396,4 +460,24 @@ footer nav li{
 .one{
     margin-left: 790px;
     margin-right: 50px;
+}
+.one3{
+        margin-left: 641px;
+    margin-right: 21px;
+    font-size: 13px;
+
+}
+.two3{
+    font-size: 13px;
+}
+.footer-nav{
+        padding-right: 358px;
+    font-size: 13px;
+}
+.footer-nav li{
+    padding-top: 10px;
+    list-style-type: none;
+    float: left;
+    padding-right: 34px;
+}
 }
