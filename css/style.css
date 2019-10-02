@@ -19,14 +19,15 @@ body{
     height: 2562px;
 	
 }
+
 a{
-        color: white;
+    color: white;
     text-decoration: none;
 }
 .container2{
 	width: 1925px;
 	margin: 0;
-	padding-left: 100px;
+	padding-left: 79px;
     padding-right: 100px
 	
 }
@@ -100,6 +101,7 @@ header nav li a{
 }
 .ul-service{
         list-style-type: none;
+        margin-top: 11px;
     
 }
 .ul-service a{
@@ -108,16 +110,16 @@ header nav li a{
 }
 .ul-service>li{
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 .text-service{
     height: 730px;
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 27px;
     text-align: left
 }
 .last-li{
-    padding-bottom: 40px;
+        padding-bottom: 30px
 }
 .info-vacancy{
     width: 840px;
@@ -140,13 +142,14 @@ header nav li a{
 }
 .menu-service{
     float: left;
-    width: 290px;
-    margin-right: 120px;
+        width: 340px;
+    margin-right: 117px;
 }
 .info-service{
     width: 1280px;
     float: left;
-    margin-bottom: 65px;
+    margin-bottom: -2px;
+    margin-top: 13px;
 }
 .photo-girl{
     width: 1140px;
@@ -154,8 +157,20 @@ header nav li a{
     float: left;
     margin-bottom: 65px;
 }
-.info-girl>span{
+.info-girl>span, .text-service>span{
     color:#bd985c;
+    font-weight: bold;
+}
+.text-service>p{
+    width: 1150px;
+    margin-bottom: 33px;
+
+}
+.hour-price{
+    margin-top: 3px;
+    margin-bottom: 30px;
+    color: #242424;
+    font-weight: bold;
 }
 .param{
     display: inline-block;
@@ -179,16 +194,16 @@ h4{
     font-size: 16px;
 }
 
-header nav ul
-
-{
+header nav ul{
 	margin-left: 24%;
 }
 footer nav ul{
 	margin: 0 auto;
 	display: inline-block;
 }
-
+.menu2 li{
+   padding-right: 29px; 
+}
 header nav li,
 footer nav li {
 	padding-top: 10px;
@@ -201,8 +216,9 @@ footer nav li {
 	display: inline-block;
 	width: 980px;
 }
-.menu .active{
+.menu, .menu2 .active{
 	border-bottom: 1px solid #cc9933;
+    padding-bottom: 9px;
 }
 
 .clearfix:after{
@@ -432,4 +448,9 @@ footer nav li{
 .one{
     margin-left: 790px;
     margin-right: 50px;
+}
+.indicator a{
+    color: #bd985c;
+    font-size: 18px;
+    font-weight: bold;
 }
