@@ -28,7 +28,13 @@ a{
 	margin: 0;
 	padding-left: 100px;
     padding-right: 100px
-	
+}
+.container-contact{
+	width: 1925px;
+	margin: 0;
+	padding-left: 82px;
+    padding-right: 100px;
+    height: 784;
 }
 header .logo{
 	float: left;
@@ -129,7 +135,7 @@ header nav li a{
 }
 .map{
     width: 1285px;
-    height: 870px;
+    height: 784px;
     float: left;
 }
 h2, h3{
