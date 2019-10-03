@@ -117,7 +117,36 @@ header nav li a{
     text-align: left;
     margin-bottom: 11px;
 }
+.ul-service>li:first-child a{
+        font-size: 18px;
+    font-weight: 400;
+    color:#bd985c;
+}
 .text-service{
+    height: 730px;
+    margin-bottom: 50px;
+   margin-top: 27px;
+    text-align: left
+}
+.ul-certificate{
+        list-style-type: none;
+        margin-top: 11px;
+    
+}
+.ul-certificate a{
+    text-decoration: none;
+    color: #242424;
+}
+.ul-certificate>li{
+    text-align: left;
+    margin-bottom: 11px;
+}
+.ul-certificate>li:first-child a{
+        font-size: 18px;
+    font-weight: 400;
+    color:#bd985c;
+}
+.text-certificate{
     height: 730px;
     margin-bottom: 50px;
     margin-top: 27px;
@@ -174,6 +203,12 @@ header nav li a{
 .adr{
     display: inline-block;
 }
+.menu-certificate{
+    float: left;
+        width: 340px;
+    margin-right: 117px;
+    margin-top: 75px;
+}
 .menu-service{
     float: left;
         width: 340px;
@@ -183,6 +218,12 @@ header nav li a{
     width: 1280px;
     float: left;
     margin-bottom: -2px;
+    margin-top: 13px;
+}
+.info-certificate{
+    width: 1280px;
+    float: left;
+    margin-bottom: -59px;
     margin-top: 13px;
 }
 .photo{
@@ -210,11 +251,12 @@ header nav li a{
     color:#bd985c;
     font-weight: bold;
 }
-.text-service>p{
+.text-service>p, .text-certificate>p{
     width: 1150px;
     margin-bottom: 33px;
 
 }
+
 .hour-price{
     margin-top: 3px;
     margin-bottom: 30px;
@@ -237,12 +279,20 @@ header nav li a{
 h2, h3{
    color: #bd985c;
 }
+
 h5{
         color: #bd985c;
     font-size: 22px;
     font-weight: 400;
         margin-bottom: -12px;
     margin-top: 26px;
+}
+h6{
+    color: #bd985c;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: -12px;
+    margin-top: 38px;
 }
 h4{
     color: #bd985c;
