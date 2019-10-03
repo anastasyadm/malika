@@ -481,13 +481,13 @@ footer nav li {
     padding-left: 42px;
     margin-top: 22px;
 }
-.salon a{
-	color: #515151;
-	font-size: 21px;
-	margin-right: 52px;
-	text-decoration: none;
+.choose{
+        height: 64px;
+    padding-left: 42px;
+    margin-top: 35px;
 }
-.price a{
+
+.price a, .salon a, .choose a{
 	color: #515151;
 	font-size: 21px;
 	margin-right: 52px;
