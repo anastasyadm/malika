@@ -30,6 +30,13 @@ a{
     padding-right: 100px
 	
 }
+.container3{
+
+    width: 1925px;
+    padding: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 header .logo{
 	float: left;
 	margin-left: 100px;
@@ -51,7 +58,7 @@ header .logo img{
 
 }
 header .logo2 img{
-	padding-top: 12px;
+	padding-top: 11px;
 	height: 24px;
 
 }
@@ -134,10 +141,20 @@ header nav li a{
     margin-right: 69px;
 }
 .info-girl{
-    width: 400px;
+    width: 560px;
     float: left;
     text-align: left;
     margin-right: 20px;
+        margin-top: 64px;
+}
+.inf-girl{
+        margin-bottom: 44px;
+}
+.data{
+    font-size: 19px;
+}
+.adr{
+    display: inline-block;
 }
 .menu-service{
     float: left;
@@ -155,6 +172,7 @@ header nav li a{
     height: 918px;
     float: left;
     margin-bottom: 65px;
+        margin-top: 16px;
 }
 .info-girl>span, .text-service>span{
     color:#bd985c;
@@ -285,6 +303,10 @@ footer nav li {
 	font-size: 21px;
 	margin-right: 52px;
 	text-decoration: none;
+}
+.name{
+    font-size: 35px;
+        margin-bottom: 21px;
 }
 .name-girl{
 	font-size: 36px;
@@ -453,4 +475,8 @@ footer nav li{
     color: #bd985c;
     font-size: 18px;
     font-weight: bold;
+}
+.active {
+	color: #bd985c;
+    font-size: 18px;
 }
