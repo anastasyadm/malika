@@ -7,7 +7,9 @@ body{
 	width: 1925px;
 	text-align: center;
 	margin: 0 auto;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	z-index: 10;
 	font-family:'Gotham Pro';
 	padding: 0;
@@ -70,7 +72,6 @@ header nav li a{
 	font-family:'Gotham Pro';
 	color: #FFF;
     margin-right: 15px;
-        padding-top: 38px;
 }
 
 .info-contact p{
@@ -381,9 +382,7 @@ footer nav li {
   border-color: #4e4e4e;
   border-width: 0px;
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -434,10 +433,6 @@ footer nav li {
   position: relative;
   top: 5px;
   left: 4px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
   border-radius: 6px;
   background-color: #7f7f7f;
 }
@@ -462,9 +457,23 @@ footer nav li {
 
 
 
-.active{
-	border-bottom: 1px solid #cc9933;
-    padding-bottom: 9px;
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #b48943;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+    margin-top: 9px;
+    border-bottom: none;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
 }
 
 .clearfix:after{
@@ -485,6 +494,28 @@ footer nav li {
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
+button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+ 
+
+button:hover::after {
+    opacity: 1;
+}
+
+
 .for-men{
     position: absolute;
     top: 2919px;
@@ -499,6 +530,16 @@ footer nav li {
     font-size: 37px;
     color: white;
 }
+
+
+.for-men:hover,  .for-couples2:hover, .logo2:hover,
+.logo-footer:hover{
+  -webkit-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+      transform: scale(1.25, 1.25);
+}
+
+
 .clear{
 	clear: both;
 }
@@ -517,7 +558,8 @@ footer nav li {
 	top:0;
 	width: 1925px;
 	height: 1000px;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	z-index: -1;
    
 }
@@ -692,6 +734,8 @@ button{
 	border-color: #b48943;
 	border-style: solid;
 	color: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .block-wrap{
 	width: 1140px;
@@ -800,6 +844,9 @@ footer nav li{
 .active {
 	color: #bd985c;
     font-size: 18px;
+	border-bottom: 1px solid #cc9933;
+    padding-bottom: 9px;
+
 }
 .header-table{
     width: 200px;
@@ -824,6 +871,10 @@ td{
     height: 30px;
     border-top: 1px solid #bd985c;
     border-right: 1px solid #bd985c;
+}
+th:last-child{
+    border-right: none;
+
 }
 td:last-child{
     border-right: none;
