@@ -437,8 +437,7 @@ textarea{
 .footer{
     background:#242424;
     clear: both;
-    height: 255px;
-    
+    height: 250px;
 }
 .top-nav-wrap{
     clear: both;
@@ -479,4 +478,36 @@ footer nav li{
 .active {
 	color: #bd985c;
     font-size: 18px;
+}
+.header-table{
+    width: 200px;
+}
+table{
+    padding-top: 29px;
+        margin-bottom: 40px;
+}
+th{
+        border-right: 1px solid #bd985c;
+}
+tr{
+    height: 30px;
+    border-bottom: 1px solid #bd985c;
+}
+td{
+      font-size: 17px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding: -24px;
+    text-align: left;
+    height: 30px;
+    border-top: 1px solid #bd985c;
+    border-right: 1px solid #bd985c;
+}
+td:last-child{
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid #bd985c;
+}
+td>a{
+        color: #242424;
 }
