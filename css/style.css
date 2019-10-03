@@ -18,7 +18,10 @@ body{
 	padding: 0;
 	
 }
-
+.color{
+    color:#bd985c;
+    display: inline-block;
+}
 a{
     color: white;
     text-decoration: none;
@@ -123,16 +126,29 @@ header nav li a{
 .last-li{
         padding-bottom: 30px
 }
-.info-vacancy{
+.info-about{
     width: 844px;
     float: left;
     margin-top: 12px;
     text-align: left;
     margin-right: 23px;
 }
-.info-vacancy p{
+.info-about p{
     font-size: 14px;
         line-height: 23px;
+}
+.info-vacancy{
+        width: 844px;
+    float: left;
+    margin-top: 48px;
+    text-align: left;
+    margin-right: 27px;
+}
+.info-vacancy p{
+   font-size: 14px;
+    line-height: 24px;
+    margin-top: 32px;
+    margin-bottom: -7px;
 }
 .info-contact{
     width: 371px;
@@ -174,6 +190,13 @@ header nav li a{
     float: left;
     margin-top: 37px;
     margin-bottom: 112px;
+
+}
+.photo-vacancy{
+        width: 850px;
+    float: left;
+    margin-top: 28px;
+    margin-bottom: 122px;
 
 }
 .photo-girl{
