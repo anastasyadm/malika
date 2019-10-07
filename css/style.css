@@ -33,6 +33,9 @@ video { display: block; width: 100%; height: auto; }
 .nav-item a {
     position: relative;
 }
+.nav-link-black{
+	color:black;
+}
 .nav-item a:after {
     display: block;
     content: "";
@@ -83,12 +86,14 @@ nav li{
     position: absolute;
     background-color: white;
     min-width: 160px;
-    padding: 5px 0px;
+    padding: 2px 0px;
     z-index: 1;
     top: 36px;
+    left: -63%;
+    text-align: center;
 }
 .dropdown-content li{
-    margin:0 1em;
+    margin:1em 1em;
     list-style-type: none;
 }
 .dropdown:hover .dropdown-content{
@@ -120,7 +125,7 @@ footer .navbar-collapse ul{
 	margin:0 auto;
 }
 .one{
-	min-width: 10vw;
+	min-width: 11vw;
 }
 section img{
 	width: 1.5em;
@@ -146,7 +151,10 @@ a:hover{
     text-decoration: none;
     color: inherit;
 }
-
+.col a{
+    color: white;
+    text-decoration: none;
+}
 /*SERTIFICATE PAGE*/
 
 
@@ -222,6 +230,9 @@ h4{
 }
 .requisites{
 	margin-top: 20vh;
+}
+.info-contact{
+    line-height: 1.25;
 }
 
 /*GIRL PAGE*/
@@ -442,8 +453,8 @@ h3{
 	margin: 2em 0;
 }
 .first{
-
 	color:rgb(189, 152, 92) !important;
+    font-size: 18px;
 }
 .text-service span, .text-blog span{
 	color:rgb(189, 152, 92);
@@ -510,17 +521,18 @@ form input{
 
 .card{
 	margin: 1em 0;
+    border: none !important;
 }
+
 .card-title{
 	color: white ;
-	font-size: 2.7vw;
-	margin-top: 65%;
+	margin-top: 60%;
 }
 .card button{
 	color:white;
 	background-color: hsla(200,0%,90%, 0.5);       
 	font-family:"Gotham Pro";
-	font-size:1.7vw;
+	
 	border: 1px solid rgb(189, 152, 92);
 	min-width: 25%;
 	height: 15%;
@@ -560,7 +572,6 @@ form input{
 	color: white;
 	/*text-decoration: none;*/
 	text-align: center;
-	font-size: 2vw;	
 	font-family: 'Gotham Pro';
 	font-weight: 400;
 	line-height: 1em;
