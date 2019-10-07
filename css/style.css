@@ -77,7 +77,14 @@ select{
     -moz-appearance: none;
     -ms-appearance: none;
     appearance: none !important;
-    border: none
+    border: none;
+    background-color: inherit;
+}
+.english option{
+    color: white;
+}
+option{
+    background-color: inherit;
 }
 select:hover, select:active, select:focus, {
     border: none;
@@ -536,7 +543,7 @@ form input{
 /*INDEX PAGE*/
 
 .for-couples{
-	margin-top: 4em;
+	margin-top: 8em;
 }
 
 .for-clients span{
@@ -558,7 +565,7 @@ form input{
 }
 
 .for-clients .card-title{
-	margin-top: 50%;
+	margin-top: 48%;
 }
 .for-clients .card-title a{
 	text-decoration: none;
