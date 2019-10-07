@@ -31,32 +31,32 @@ video { display: block; width: 100%; height: auto; }
 	color: white;
 }
 .nav-item a {
-    position: relative;
+	position: relative;
 }
 .nav-link-black{
 	color:black;
 }
-.nav-item a:after {
-    display: block;
-    content: "";
-    background-color: rgb(189, 152, 92);
-    height: 1px;
-    top: 99%;
-    width: 0%;
-    left: 50%;
-    position: absolute;
-    -webkit-transition: width .5s ease-out;
-    -moz--transition: width .5s ease-out;
-    transition: width .5s ease-out;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
+.nav-item a:after :not(.social-btn-hdr){
+	display: block;
+	content: "";
+	background-color: rgb(189, 152, 92);
+	height: 1px;
+	top: 99%;
+	width: 0%;
+	left: 50%;
+	position: absolute;
+	-webkit-transition: width .5s ease-out;
+	-moz--transition: width .5s ease-out;
+	transition: width .5s ease-out;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 .nav-item a:hover:after,
-.nav-item a:focus:after {
+.nav-item a:focus:after :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl) {
     width: 100%;
 }
-.nav-item a:hover {
+.nav-item a:hover :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl)){
   border-bottom: 1px solid rgb(189, 152, 92);
 }
 .active{
@@ -65,39 +65,56 @@ video { display: block; width: 100%; height: auto; }
 .navbar-color a{
 	color: white !important ;
 }
+.social-btn-hdr a{
+    color: black !important;
+    text-decoration: none;
+}
+.social-btn-hdr{
+    padding-top: 0.3em;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+    border: none
+}
+select:hover, select:active, select:focus, {
+    border: none;
+}
 nav{
 	z-index: 100;
 	white-space: nowrap;
 }
 header nav div{
-	padding-left: 13%;
+	padding-left: 1%;
 	margin-top: 1em;
 }
 nav li{
-	margin:0 1em;
+	margin:0 0.7em;
 }
 .dropdown {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    padding: 2px 0px;
-    z-index: 1;
-    top: 36px;
-    left: -63%;
-    text-align: center;
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	padding: 2px 0px;
+	z-index: 1;
+	top: 36px;
+	left: -63%;
+	text-align: center;
 }
 .dropdown-content li{
-    margin:1em 1em;
-    list-style-type: none;
+	margin:1em 1em;
+	list-style-type: none;
 }
 .dropdown:hover .dropdown-content{
-    display: block;
+	display: block;
 }
 
 .wrapper{
@@ -148,12 +165,12 @@ p{
 	font-size:14px;
 }
 a:hover{
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 .col a{
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 /*SERTIFICATE PAGE*/
 
@@ -215,7 +232,7 @@ h6{
 	width: 80%
 }
 .modal-title{
-    text-align: center;
+	text-align: center;
 }
 
 /*CONTACT PAGE*/
@@ -232,7 +249,7 @@ h4{
 	margin-top: 20vh;
 }
 .info-contact{
-    line-height: 1.25;
+	line-height: 1.25;
 }
 
 /*GIRL PAGE*/
@@ -357,7 +374,7 @@ h3{
 	cursor:pointer;
 	font-family:"Gotham Pro";
 	font-size:21px;
-    margin-right: 20px;
+	margin-right: 20px;
 }
 .cnt_slider{
 	margin: 0 auto;
@@ -443,7 +460,7 @@ h3{
 }
 /*blog PAGE*/
 .text-blog{
-    border-bottom: 1px solid rgb(189, 152, 92);;
+	border-bottom: 1px solid rgb(189, 152, 92);;
 }
 
 
@@ -454,7 +471,7 @@ h3{
 }
 .first{
 	color:rgb(189, 152, 92) !important;
-    font-size: 18px;
+	font-size: 18px;
 }
 .text-service span, .text-blog span{
 	color:rgb(189, 152, 92);
@@ -518,10 +535,41 @@ form input{
 
 /*INDEX PAGE*/
 
+.for-couples{
+	margin-top: 4em;
+}
+
+.for-clients span{
+	display: block;	
+}
+@media (max-width: 500px) {
+	.for-clients .card-title{
+		margin-top: 30%;
+	}
+	
+}
+.for-clients .card-title:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.for-couples .for-clients .card{
+	padding: 0 !important;
+}
+
+.for-clients .card-title{
+	margin-top: 50%;
+}
+.for-clients .card-title a{
+	text-decoration: none;
+	color: white;
+}
+.img-one{
+}
 
 .card{
 	margin: 1em 0;
-    border: none !important;
+	border: none !important;
 }
 
 .card-title{
@@ -540,7 +588,7 @@ form input{
 .card-img-overlay{
 	text-align: center;
 	top: 10;
-    padding: 3.25rem;
+	padding: 3.25rem;
 }
 
 .choose{
@@ -560,7 +608,6 @@ form input{
 }
 .for-clients{
 	margin-top: -9%;
-	padding: 0 5%;
 	margin-bottom: 5em;
 	position: static;
 }
@@ -577,11 +624,7 @@ form input{
 	line-height: 1em;
 	white-space: nowrap;
 }
-.for-men a:hover p{
-	-webkit-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
-}
+
 
 /*SCHEDULE PAGE*/
 
