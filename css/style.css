@@ -607,8 +607,8 @@ form input{
 	font-family:"Gotham Pro";
 	
 	border: 1px solid rgb(189, 152, 92);
-	min-width: 25%;
-	height: 15%;
+	min-width: 85%;
+	height: 12%;
 }
 .card-img-overlay{
 	text-align: center;
