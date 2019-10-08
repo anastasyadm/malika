@@ -116,7 +116,7 @@ header nav div{
 	margin-top: 1em;
 }
 nav li{
-	margin:0 0.7em;
+	margin:0 0.9em;
 }
 .dropdown {
 	position: relative;
@@ -573,6 +573,16 @@ form input{
 	}
 	
 }
+@media (max-width: 900px) {
+	.choose a{
+		font-size: 4vw !important;
+        display: inline-block;
+	}
+    .our-girls{
+        margin-right: 20%;
+    }
+	
+}
 .for-clients .card-title:hover{
 	-webkit-transform: scale(1.2);
 	-ms-transform: scale(1.2);
@@ -626,7 +636,7 @@ form input{
 	color:rgb(81, 81, 81);
 	cursor:pointer;
 	font-family:"Gotham Pro";
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 .choose-item{
 	text-align: center;
