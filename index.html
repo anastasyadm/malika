@@ -85,6 +85,22 @@
 								<li class="nav-item">
 									<a class="nav-link" href="contact.html">Контакты</a>
 								</li>
+								<li class="nav-item social-btn-hdr">
+                                    <a class="social_btn social_btn_wa" href="#"><img src="images/menu/whatsapp.png" width="23" height="23" alt="logo"></a>
+                                </li>
+                                <li class="nav-item social-btn-hdr">
+                                    <a class="social_btn_tg" href="#"><img src="images/menu/telegram.png" width="23" height="23" alt="logo"></a>
+                                </li>
+                                <li class="nav-item social-btn-hdr dropdown-eng" id=dd>
+                                    <img src="images/menu/iglobus.png" width="23" height="23" alt="logo">
+                                    Русский
+                                   <ul class="ul-dropdown-eng">
+                                        <li><a href="#"><em></em>Twitter</a></li>
+                                        <li><a href="#"><em></em>Github</a></li>
+                                        <li><a href="#"><em></em>Facebook</a></li>
+                                    </ul>
+                                    <img src="images/menu/arrow.png" alt="logo">
+                                </li>
 							</ul>
 						</div>
 					</nav>
@@ -482,6 +498,20 @@
 			var min_w = 300;
 			var vid_w_orig;
 			var vid_h_orig;
+            function DropDown(el) {
+ this.dd = el;
+ this.initEvents();
+}
+DropDown.prototype = {
+ initEvents : function() {
+ var obj = this;
+
+ obj.dd.on('click', function(event){
+ $(this).toggleClass('active');
+ event.stopPropagation();
+ });
+ }
+}
 			
 			$(function() {
 
