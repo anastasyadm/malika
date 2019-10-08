@@ -1,17 +1,41 @@
 html{
 	overflow-x: hidden;
 }
+@media (max-width: 1300px) and (min-width: 1200px) {
+	.languageName{
+		display: none;
+	}
+}
+
 @media (max-width: 1200px) {
 
-.page-main .navbar-nav{
-	background: rgba(255,255,255,0.5)!important;
-	width: 80%;
-}
-    .nav-item a{
+	.page-main .navbar-nav{
+		background: rgba(255,255,255,0.5)!important;
+		width: 80%;
+	}
+    .nav-item a, .nav-item span{
         color: black !important;
     }
 	
+	.inlineShow{
+		margin-left: -1%;
+	}
+	button:focus {
+		outline: none;
+	}
+	.card-title {
+		margin-top: 55% !important;
+	}
 }
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+.card-title {
+		margin-top: 70% !important;
+	}
+}
+
 /*video responsive*/
 
 #video-viewport { margin-top: -4%; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; }
@@ -30,8 +54,15 @@ video { display: block; width: 100%; height: auto; }
 .videoMargin{
 	height: 51vw;
 }
+
 /*video responsive*/
 
+.videoMargin{
+	border: none !important;
+}
+.inlineShow a{
+	margin-left: 1em;
+}
 
 .navbar-light .navbar-nav .nav-item .nav-link{
 	font-family:'Gotham Pro';
@@ -43,7 +74,7 @@ video { display: block; width: 100%; height: auto; }
 
 }
 .navbar-dark .navbar-toggler, .navbar-toggler:focus{
-    border: none !important;
+	border: none !important;
 }
 .nav-item a {
 	position: relative;
@@ -68,10 +99,10 @@ video { display: block; width: 100%; height: auto; }
 	transform: translateX(-50%);
 }
 .nav-item a:hover :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl)){
-  border-bottom: 1px solid rgb(189, 152, 92);
+	border-bottom: 1px solid rgb(189, 152, 92);
 }
 .nav-item a:focus:after :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl) {
-    width: 100%;
+	width: 100%;
 }
 .active{
 	border-bottom: 1px solid rgb(189, 152, 92);
@@ -81,48 +112,53 @@ video { display: block; width: 100%; height: auto; }
 }
 
 .social-btn-hdr a{
-    color: black !important;
-    text-decoration: none;
+	color: black !important;
+	text-decoration: none;
 }
 .social-btn-hdr{
-    padding-top: 0.3em;
+	padding-top: 0.3em;
 }
 .dropdown-eng{
-    color: white;
+	color: white;
 }
 .black{
-    color: black;
+	color: black;
 }
 .dropdown-eng .ul-dropdown-eng{
-    position: absolute;
- top: 100%;
- left: -5px;
- right: 0px;
-     background: white;
- transition: all 0.3s ease-out;
- list-style: none;
+	position: absolute;
+	top: 100%;
+	left: -5px;
+	right: 0px;
+	background: white;
+	transition: all 0.3s ease-out;
+	list-style: none;
 
- opacity: 0;
- pointer-events: none;
+	opacity: 0;
+	pointer-events: none;
 }
 .dropdown-eng .ul-dropdown-eng li a{
-    display: block;
- text-decoration: none;
- color: #333;
- border-left: 5px solid;
- padding: 10px;
- transition: all 0.3s ease-out;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	border-left: 5px solid;
+	padding: 10px;
+	transition: all 0.3s ease-out;
 }
 nav{
 	z-index: 100;
 	white-space: nowrap;
 }
 header nav div{
-	padding-left: 1%;
+	padding-left: 20%;
 	margin-top: 1em;
 }
+@media (max-width: 1660px) {
+	header nav div{
+		padding-left: 0%;
+	}
+}
 nav li{
-	margin:0 0.9em;
+	margin:0 0.5em;
 }
 .dropdown {
 	position: relative;
@@ -576,20 +612,20 @@ form input{
 @media (max-width: 600px) {
 	.for-clients .card-title{
 		margin-top: 30%;
-            
+
 	}
-    .for-couples{
-        margin-top: 3em;
-    }
+	.for-couples{
+		margin-top: 3em;
+	}
 }
 @media (max-width: 900px) {
 	.choose a{
 		font-size: 4vw !important;
-        display: inline-block;
+		display: inline-block;
 	}
-    .our-girls{
-        margin-right: 20%;
-    }
+	.our-girls{
+		margin-right: 20%;
+	}
 	
 }
 .for-couples .for-clients .card{
@@ -626,8 +662,6 @@ form input{
 }
 .card-img-overlay{
 	text-align: center;
-	top: 10;
-	padding: 3.25rem;
 }
 .card-for-men{
 	text-align: left;
