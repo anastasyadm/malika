@@ -4,9 +4,12 @@ html{
 @media (max-width: 1200px) {
 
 .page-main .navbar-nav{
-	background: rgba(50,50,50,0.5);
+	background: rgba(255,255,255,0.5)!important;
 	width: 80%;
 }
+    .nav-item a{
+        color: black !important;
+    }
 	
 }
 /*video responsive*/
@@ -38,6 +41,9 @@ video { display: block; width: 100%; height: auto; }
 .navbar-dark .navbar-nav .nav-item .nav-link{
 	color: white;
 
+}
+.navbar-dark .navbar-toggler, .navbar-toggler:focus{
+    border: none !important;
 }
 .nav-item a {
 	position: relative;
@@ -567,11 +573,14 @@ form input{
 .for-clients span{
 	display: block;	
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.for-clients .card-title{
 		margin-top: 30%;
+            
 	}
-	
+    .for-couples{
+        margin-top: 3em;
+    }
 }
 @media (max-width: 900px) {
 	.choose a{
@@ -582,11 +591,6 @@ form input{
         margin-right: 20%;
     }
 	
-}
-.for-clients .card-title:hover{
-	-webkit-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
 }
 .for-couples .for-clients .card{
 	padding: 0 !important;
@@ -622,6 +626,16 @@ form input{
 }
 .card-img-overlay{
 	text-align: center;
+	top: 10;
+	padding: 3.25rem;
+}
+.card-for-men{
+	text-align: left;
+	top: 10;
+	padding: 3.25rem;
+}
+.card-for-couples{
+	text-align: right;
 	top: 10;
 	padding: 3.25rem;
 }
