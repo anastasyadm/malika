@@ -82,7 +82,7 @@ video { display: block; width: 100%; height: auto; }
 .nav-link-black{
 	color:black;
 }
-.nav-item a:after :not(.social-btn-hdr){
+.nav-item a:after{
 	display: block;
 	content: "";
 	background-color: rgb(189, 152, 92);
@@ -95,14 +95,17 @@ video { display: block; width: 100%; height: auto; }
 	-moz--transition: width .5s ease-out;
 	transition: width .5s ease-out;
 	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-moz-transform: translateX(50%);
+	/*transform: translateX(-50%);*/
 }
-.nav-item a:hover :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl)){
+.nav-item a:hover :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl){
 	border-bottom: 1px solid rgb(189, 152, 92);
 }
-.nav-item a:focus:after :not(.social-btn-hdr, .social_btn_tg, .social_btn_wa, .social_btn_gl) {
+.nav-item a:hover:after{
 	width: 100%;
+}
+.social-btn-hdr a:hover:after{
+	width: 0%;
 }
 .active{
 	border-bottom: 1px solid rgb(189, 152, 92);
@@ -130,7 +133,7 @@ video { display: block; width: 100%; height: auto; }
 	left: -5px;
 	right: 0px;
 	background: white;
-	transition: all 0.3s ease-out;
+	/*transition: all 0.3s ease-out;*/
 	list-style: none;
 
 	opacity: 0;
@@ -142,7 +145,7 @@ video { display: block; width: 100%; height: auto; }
 	color: #333;
 	border-left: 5px solid;
 	padding: 10px;
-	transition: all 0.3s ease-out;
+	/*transition: all 0.3s ease-out;*/
 }
 nav{
 	z-index: 100;
