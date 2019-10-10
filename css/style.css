@@ -17,7 +17,7 @@ html{
 		background: rgba(255,255,255,0.85) !important;
 	}
 	.page-main .navbar-toggler{
-		background: rgba(255,255,255,1);
+		background-color: inherit;
 	}
 	.page-main .navbar-nav{
 		background: rgba(255,255,255,1)!important;
