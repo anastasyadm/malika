@@ -7,15 +7,24 @@ html{
 	}
 }
 
-@media (max-width: 1200px) {
-
-	.page-main .navbar-nav{
-		background: rgba(255,255,255,0.5)!important;
-		width: 80%;
+@media (min-width: 1201px) {
+	.page-main .nav-item a, .page-main .nav-item span{
+		color: white !important;
 	}
-    .nav-item a, .nav-item span{
-        color: black !important;
-    }
+}
+@media (max-width: 1200px) {	
+	.sidebar{
+		background: rgba(255,255,255,0.85) !important;
+	}
+	.page-main .navbar-toggler{
+		background: rgba(255,255,255,1);
+	}
+	.page-main .navbar-nav{
+		background: rgba(255,255,255,1)!important;
+	}
+	.nav-item a, .nav-item span{
+		color: black !important;
+	}
 	
 	.inlineShow{
 		margin-left: -1%;
@@ -26,15 +35,50 @@ html{
 	.card-title {
 		margin-top: 55% !important;
 	}
-}
-@media (max-width: 1200px) {
-
-}
-@media (max-width: 992px) {
-.card-title {
-		margin-top: 70% !important;
+	.card-for-couples .card-title, .card-for-men .card-title{
+		margin-top: 40% !important;
+	}
+	footer nav{
+		display: none !important;
 	}
 }
+
+@media (max-width: 992px) {
+	.card-title {
+		margin-top: 68% !important;
+	}
+}
+@media (min-width: 400px) and (max-width: 500px){
+	.card-title {
+		margin-top: 58% !important;
+	}
+}
+@media (min-width: 615px) and (max-width: 900px){
+	.card-title {
+		margin-top: 68% !important;
+	}
+    h5{
+        font-size: 4vw !important;
+    }
+    p{
+        font-size: 3vw !important;
+    }
+    button{
+        font-size: 3vw !important;
+    }
+}
+@media (max-width: 400px) {
+	.card-title {
+		margin-top: 58% !important;
+	}
+}
+@media (min-width: 300px) and (max-width: 350px) {
+	.card-title {
+		margin-top: 41% !important;
+	}
+}
+
+
 
 /*video responsive*/
 
@@ -62,6 +106,15 @@ video { display: block; width: 100%; height: auto; }
 }
 .inlineShow a{
 	margin-left: 1em;
+}
+
+.row{
+	margin-left: 0;
+	margin-right: 0;
+
+}
+.navbar{
+    padding: 0 7%;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link{
@@ -93,6 +146,7 @@ video { display: block; width: 100%; height: auto; }
 	position: absolute;
 	-webkit-transition: width .5s ease-out;
 	-moz--transition: width .5s ease-out;
+	-o-transition: width .5s ease-out;
 	transition: width .5s ease-out;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(50%);
@@ -106,6 +160,9 @@ video { display: block; width: 100%; height: auto; }
 }
 .social-btn-hdr a:hover:after{
 	width: 0%;
+}
+.nav-inline-item{
+	margin-left: 1em;
 }
 .active{
 	border-bottom: 1px solid rgb(189, 152, 92);
@@ -122,6 +179,13 @@ video { display: block; width: 100%; height: auto; }
 	padding-top: 0.3em;
 }
 .dropdown-eng{
+	color: white;
+}
+
+.languageName{
+	color: black;
+}
+.page-main .languageName{
 	color: white;
 }
 .black{
@@ -150,6 +214,7 @@ video { display: block; width: 100%; height: auto; }
 nav{
 	z-index: 100;
 	white-space: nowrap;
+    
 }
 header nav div{
 	padding-left: 20%;
@@ -167,7 +232,9 @@ nav li{
 	position: relative;
 	display: inline-block;
 }
-
+.page-main .dropdown-content {
+	background: none;
+}
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -176,7 +243,7 @@ nav li{
 	padding: 2px 0px;
 	z-index: 1;
 	top: 36px;
-	left: -63%;
+	left: -50%;
 	text-align: center;
 }
 .dropdown-content li{
@@ -187,14 +254,12 @@ nav li{
 	display: block;
 }
 
-.wrapper{
-	padding: 0 5%;
-}
 .aboutPage{
 	margin: 4em 0;
 }
 .about{
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	max-width: 100%;
 }
 .navbar-toggler{
@@ -204,6 +269,7 @@ footer{
 	background: #242424;
 	text-align: center;
 	color: white;
+	z-index: 1000;
 }
 footer img{
 	margin: 2em auto;
@@ -223,7 +289,8 @@ section img{
 	color:white;
 }
 h5{
-	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	        box-sizing:border-box;
 	color:rgb(189, 152, 92);
 	display:block;
 	font-family:"Gotham Pro";
@@ -308,7 +375,7 @@ h6{
 /*CONTACT PAGE*/
 
 .contact{
-	margin:2em 0;
+	margin:4em 0;
 }
 h4{
 	color:rgb(189, 152, 92);
@@ -642,7 +709,8 @@ form input{
 	text-decoration: none;
 	color: white;
 }
-.img-one{
+.img-fluid{
+    margin-top: 4%;
 }
 
 .card{
@@ -661,7 +729,11 @@ form input{
 	
 	border: 1px solid rgb(189, 152, 92);
 	min-width: 85%;
-	height: 12%;
+	height: 13%;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0;
 }
 .card-img-overlay{
 	text-align: center;
@@ -744,3 +816,131 @@ table tr:last-child td, tbody:last-child th {
 table tr td:last-child, thead tr th:last-child {
 	border-right: 0 !important;
 }
+
+/*ASIDE*/
+.aboutPage{
+    width: 100%;
+    padding: 0 7%;
+}
+.wrapper{
+    width: 100%;
+    padding: 0 7%;
+}
+
+/*Position and style for the sidebar*/ 
+
+.sidebar { 
+	padding-top: 2em;
+	position: absolute; 
+	/*Stays in place */ 
+	background-color: rgba(255,255,255,1) !important; 
+	/*green*/ 
+	overflow-x: hidden; 
+	/*for Disabling horizontal scroll */ 
+} 
+/* Position and style for the sidebar links */ 
+
+.sidebar a { 
+	padding: 10px 10px 10px; 
+	color: #111; 
+	display: block; 
+	-webkit-transition: 0.3s; 
+	-o-transition: 0.3s; 
+	transition: 0.3s; 
+} 
+/* the links change color when mouse hovers upon them*/ 
+
+.sidebar a:hover { 
+	color: #bd985c; 
+} 
+/* Position and style the for cross button */ 
+
+.sidebar .closebtn { 
+	position: absolute; 
+	top: 0; 
+	right: 25px; 
+	display: none;
+} 
+/* Style for the sidebar button */ 
+
+.openbtn { 
+	color: #111; 
+	padding: 10px 10px 10px; 
+	margin-bottom: 1em;
+	border: none; 
+        margin-top: 1em;
+} 
+        /* the sidebar button changes  
+        color when mouse hovers upon it */ 
+        
+
+      /* pushes the page content to the right 
+      when you open the side navigation */ 
+
+      #main { 
+      	margin-left: 20vw;
+      	-webkit-transition: margin-left .5s;
+      	-o-transition: margin-left .5s;
+      	transition: margin-left .5s; 
+      	/* If you want a transition effect */ 
+      	padding: 10px; 
+      } 
+      .withSideBar .buy-btn{
+      	text-align: center;
+      	margin-bottom: 2em;
+      }
+
+      @media (max-width: 1200px){
+      	.sidebar{
+      		width: 0;
+      		min-width: 0; 
+      	}
+      	#main{
+      		margin-left: 0;
+      	}
+      	.sidebar .closebtn { 
+      		display: block;
+      	}
+      	.openbtn{
+      		display: block;
+      	}
+      }
+      @media (min-width: 1200px){
+      	.sidebar{
+      		width: 20vw;
+      		min-width: 250px;
+      	}
+      	#main{
+      		margin-left: 20vw;
+      	}
+      	.openbtn{
+      		display: none;
+      	}
+      	.fixFooter footer{
+      		margin-top: 20vh;
+      	}
+      }
+
+
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 1.3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+.text-white img, .text-white button :not(.img-one){
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.text-white:hover,  .text-white button:hover{
+ -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+     transform: scale(1.1);
+ }
