@@ -53,6 +53,7 @@ body{
     .navbar-light .navbar-brand {
         color: rgba(0,0,0,.9);
         margin-left: 4% !important;
+            border: none;
     }
 
 	.inlineShow{
@@ -190,6 +191,7 @@ video { display: block; width: 100%; height: auto; max-width: 1920px;}
     border-color: rgba(0,0,0,.1);
     margin-top: 5%;
         margin-right: 5%;
+        border: none;
 }
 .navbar-light .navbar-nav .nav-item .nav-link{
 	font-family:'Gotham Pro';
