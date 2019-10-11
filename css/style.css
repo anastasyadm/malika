@@ -48,9 +48,13 @@ body{
     padding: 0 !important;
     }
     .wrapper{
-        padding: 0 !important
+        padding: 0 !important;
     }
-	
+    .navbar-light .navbar-brand {
+        color: rgba(0,0,0,.9);
+        margin-left: 4% !important;
+    }
+
 	.inlineShow{
 		margin-left: -1%;
 	}
@@ -185,6 +189,7 @@ video { display: block; width: 100%; height: auto; max-width: 1920px;}
     color: rgba(0,0,0,.5);
     border-color: rgba(0,0,0,.1);
     margin-top: 5%;
+        margin-right: 5%;
 }
 .navbar-light .navbar-nav .nav-item .nav-link{
 	font-family:'Gotham Pro';
